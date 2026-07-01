@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0cf31;
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.link {
+    color: #f1ff27;
+    text-decoration: none;
+    font-family: 'Bangers';
+    font-size: 1.6rem;
+    margin: 0 30px;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: #c4f121;
+}
+
+.hero-header {
+    background: linear-gradient(135deg, #e0cf31, #d4b000);
+    padding: 80px 8% 60px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.hero-esquerdo {
+    flex: 1;
+    min-width: 300px;
+}
+
+.guerreiro {
+    font-family: 'Bangers', sans-serif;
+    font-size: 4.5rem;
+    color: #000;
+    text-shadow: 3px 3px 0 #f1ff27;
+    margin-bottom: 20px;
+}
+
+.apresentacao {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.quote {
+    font-style: italic;
+    background: #111;
+    color: #f1ff27;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border-left: 6px solid #000;
+}
+
+.hero-direito {
+    flex: 1;
+    text-align: center;
+}
+
+.foto-principal {
+    max-width: 380px;
+    border: 6px solid #000;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.vitrine {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 60px 8%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.heroi {
+    background: #000;
+    color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.heroi:hover {
+    transform: scale(1.05) translateY(-10px);
+    box-shadow: 0 20px 40px rgba(196, 241, 33, 0.3);
+}
+
+.heroi img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.heroi h2 {
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.65rem;
+    margin-bottom: 10px;
+    color: #f0f32e;
+}
+
+.heroi p {
+    color: #ccc;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.btp-personagens {
+    background-color: #000;
+    color: #f1ff27;
+    padding: 14px 32px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btp-personagens:hover {
+    background-color: #c4f121;
+    color: #000;
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-family: 'Bangers', sans-serif;
+    font-size: 3rem;
+    color: #f0f32e;
+    margin: 40px 0 30px;
+    text-shadow: 3px 3px 0 #000;
+}
+
+.galeria-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+
+.container-chat {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.titulo-chat {
+    text-align: center;
+    font-family: 'Bangers', sans-serif;
+    font-size: 2.8rem;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.janela-mensagens {
+    background-color: #111;
+    border: 3px solid #000;
+    border-radius: 12px;
+    height: 420px;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mensagem {
+    padding: 12px 18px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.mensagem.bot {
+    background-color: #000;
+    color: #f1ff27;
+    align-self: flex-start;
+    border-left: 5px solid #f0f32e;
+}
+
+.mensagem.user {
+    background-color: #333;
+    color: white;
+    align-self: flex-end;
+}
+
+.formulario-envio {
+    display: flex;
+    gap: 10px;
+}
+
+.formulario-envio input {
+    flex: 1;
+    padding: 16px;
+    font-size: 1.1rem;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: white;
+}
+
+.formulario-envio button {
+    padding: 0 30px;
+    background: #000;
+    color: #f1ff27;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: #000;
+    color: #f1ff27;
+}
+
+.menu {
+    background-color: #000000;
+    padding: 18px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #f0f32e;
+}
+
+.link-menu {
+    color: #f1ff27;
+    text-decoration: none;
+    font-family: 'Bangers', sans-serif;
+    font-size: 1.7rem;
+    margin: 0 35px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+.link-menu:hover {
+    color: #c4f121;
+    text-shadow: 0 0 10px #f0f32e;
+}
+
+.container-chat {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
